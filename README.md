@@ -3,9 +3,10 @@ CoffeeNet Framework Project
 
 Authors : Normaltic
 
-Email   : rlagkstn1426@naver.com
-============
+email   : rlagkstn1426@naver.com
 
+
+# **Greeting**
 Hello.
 I am Normaltic. aka Normaltic1018.
 
