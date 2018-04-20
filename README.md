@@ -26,6 +26,7 @@ sudo ./setup.sh
 
 2) Usage
 Just type "./CoffeeNet.py"
+
 If you are not root, type "sudo ./CoffeeNet.py"
 
 If CoffeeNet.py does not have execute permission,
