@@ -17,6 +17,20 @@ Scan your Network using scanner tool in CoffeeNet
 And If you want, YOU CAN create sniffing ENV
 Enjoy your HACK LIFE 
 
+# **How to Use**
+
+1) Setup
+[command]
+cd setup
+sudo ./setup.sh
+
+2) Usage
+Just type "./CoffeeNet.py"
+If you are not root, type "sudo ./CoffeeNet.py"
+
+If CoffeeNet.py does not have execute permission,
+type "chmod u+x ./CoffeeNet.py"
+
 # **Available Tools**
 1) Scanner.
 : It works with NMAP.
