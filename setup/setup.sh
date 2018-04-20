@@ -104,6 +104,21 @@ func_check_env() {
   else
 	  echo -e "\n [*] ${YELLOW}pip3 is installed ${RESET}\n"
   fi
+
+  if ! [ -x "$(command -v nmap)" ]; then
+	  # nmap is not installed.
+	  sudo apt-get -y install nmap
+	  tmp="$?"
+	  if [ "${tmp}" -ne "0" ]; then
+		  msg="Failed to install dependencies (nmap)...Exit code: ${tmp}"
+		  errors="${errors}\n${msg}"
+		  echo -e " ${RED}[ERROR] ${msg}${RESET}\n"
+		  exit 1
+	  fi
+	  echo -e "\n [*] ${YELLOW}nmap is installed ${RESET}\n"
+  else
+	  echo -e "\n [*] ${YELLOW}nmap is installed ${RESET}\n"
+  fi
   func_python_deps
 }
 
@@ -114,7 +129,11 @@ func_python_deps(){
 		if python3 -c "import ${line}" $> /dev/null;then
 	  		echo -e "\n [*] ${YELLOW}${line} is installed ${RESET}\n"
 		else
-			sudo pip3 install ${line}
+			if [ "$line" == "nmap" ]; then
+			       sudo pip3 install python-nmap
+		        else
+		 		sudo pip3 install ${line} 		
+			fi
 	  		tmp="$?"
 	  		if [ "${tmp}" -ne "0" ]; then
 		  		msg="Failed to install python dependencies (${line})...Exit code: ${tmp}"
