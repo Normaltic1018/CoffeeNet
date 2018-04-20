@@ -19,10 +19,9 @@ Enjoy your HACK LIFE
 
 # **Available Tools**
 1) Scanner.
-- It works with NMAP.
+: It works with NMAP.
 
 
-============
 # **Plan**
 1) Sniffer
 2) Dos Attack
