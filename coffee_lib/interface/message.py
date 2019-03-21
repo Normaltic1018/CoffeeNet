@@ -18,7 +18,7 @@ def title():
     title_data += "|" + " "*82 + "|\n"
     title_data += "|" + " "*65 + "CoffeeNet v"+ version + " "*3 + "|\n"
     title_data += " " + "="*82 + "\n"
-    title_data += "|" + " made by Normaltic"+" "*30 +"[E-mail]: rlagkstn1426@naver.com  " + "|\n"
+    title_data += "|" + " made by Normaltic"+" "*30 +"[E-mail]: normaltic1018@gmail.com  " + "|\n"
     title_data += " " + "="*82 + "\n"
     
     os.system("clear")
